@@ -46,7 +46,26 @@
     "sweep_results.json「E線の開放弦の音が裏返る」「弓を速く動かすと音がひっくり返る」(症状の生の言い回し=A→E開放移行時の裏返り・駒寄り高速フォルテでの倍音混入)",
     "trouble_map.md M066(意図しないE線シュリーク/共鳴鳴りが何をしても消えない・頻出タグ・出典r/violinist)",
     "2026-05-30_バイオリン悩み図鑑.md P04(弦だけ鳴って倍音の乗り方が乱れる・振動伝達と右手の力み)、P05(発音=置いて噛ませてから動かす2段階が潰れると滑る/飛ぶ)",
-    "2026-05-30_バイオリン身体メソッド集.md P03(弓圧・弓速・接弦点の混同を切り分ける・置いて噛んでから横へ)、P04(接弦点を変えて倍音の層を数える探索ドリル)、P06(弓速一定=長弓で速度ムラを消す)"
+    "2026-05-30_バイオリン身体メソッド集.md P03(弓圧・弓速・接弦点の混同を切り分ける・置いて噛んでから横へ)、P04(接弦点を変えて倍音の層を数える探索ドリル)、P06(弓速一定=長弓で速度ムラを消す)",
+    "Guettler & Askenfelt (1997) 『Acceptance limits for the duration of pre-Helmholtz transients in bowed string attacks』 J. Acoust. Soc. Am. 101(5):2903-2913(発音の成否は初速でなく加速度×弓圧)",
+    "Violin Lab『Why does the Bow Fall Toward the Fingerboard?』(youtube_violin.md L27)／ warchal.com Amber E 製品ページ(『minimizes the risk of whistling』の記載・https://www.warchal.com/violin-strings/amber)"
+  ],
+  "secrets": [
+    {
+      "title": "裏返りの物理名は多重滑り",
+      "text": "裏返りの正体は『多重滑り(double/multiple slip)』。弓が弦を捕まえて基音の規則運動が立ち上がる前の一瞬(プレ・ヘルムホルツ過渡)が長引くと、弦は基音でなく上の倍音側で立ち上がる。Guettler & Askenfelt(1997)は、澄んで発音できるかは弓の初速そのものでなく『弓の加速度×弓圧』の組み合わせで決まると定式化した。E線開放で全弓を弾くとき、弓を『じわっと加速』させ乗った瞬間に少し腕の重みを足すと過渡が短くなり、倍音で立ち上がる隙が消える。速さでなく加速度と圧のペアで解く。",
+      "source": "Guettler, K. & Askenfelt, A. (1997) 『Acceptance limits for the duration of pre-Helmholtz transients in bowed string attacks』 J. Acoust. Soc. Am. 101(5):2903-2913"
+    },
+    {
+      "title": "肩が肩代わりすると弓が落ちる",
+      "text": "A→E線へ上がる時に裏返る一因は接触点の突然のズレ。移弦という大きな運動を『肩』が肩代わりし始めると、肘の通常の\"開く\"動作が止まり、弓が指板側へすべり落ちる。接触点が急に動くと弦が基音を掴み損ねて倍音が立つ。チェック: A→Eの上行で弓が勝手に指板へ流れないか鏡で横から見る。対策は移弦を肩でなく肘リードに戻すこと。上行フレーズでE線だけ不安定な人は、まずここを疑う。",
+      "source": "Violin Lab『Reflections on Teaching #1: Why does the Bow Fall Toward the Fingerboard?』(youtube_violin.md L27)"
+    },
+    {
+      "title": "笛対策を謳うE線がある",
+      "text": "腕(移弦・接触点)を整えても裏返り/笛(ホイッスル)が残るなら弦でも切り分けられる。裸スチールEは倍音が高くまで立つぶん出やすく、金メッキや巻き線のEに替えると出にくくなる例がある。メーカーの中には笛対策を設計に明記した製品もあり、Warchalは自社Amber E線を『笛の出るリスクを最小化する(minimizes the risk of whistling)』設計だと説明している。ただし技術が先・弦は後の順序で。裸スチールで頻発するなら巻きE/金メッキEを一段候補にし、交換は楽器店で相談すると失敗が減る。",
+      "source": "warchal.com Amber E 製品ページ(『...minimizes the risk of whistling』の記載を確認) https://www.warchal.com/violin-strings/amber"
+    }
   ],
   "tier": 3
 }

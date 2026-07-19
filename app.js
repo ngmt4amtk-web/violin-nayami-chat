@@ -272,6 +272,7 @@ function getFilteredQuestions() {
         q.app.profile,
         (q.app.discussion || []).map((turn) => (turn.blocks || []).map((block) => block.t).join(" ")).join(" "),
         (q.app.prescription || []).join(" "),
+        (q.app.secrets || []).map((secret) => `${secret.title} ${secret.text}`).join(" "),
       ].join(" "));
       return haystack.includes(query);
     }
@@ -415,6 +416,11 @@ function openQuestion(question, options = {}) {
       detail: "具体的な練習メニューだけ見る",
       action: () => showPrescription(question),
     },
+    ...(secretsOf(question).length ? [{
+      label: "裏技・プロの証言を見る",
+      detail: "教本に載りにくいコツと現場の声",
+      action: () => showSecrets(question),
+    }] : []),
     ...(question.sources.length ? [{
       label: "出典を見る",
       detail: "元になった本や論文を見る",
@@ -442,6 +448,11 @@ function showLead(question) {
       detail: "具体的な練習メニュー",
       action: () => showPrescription(question),
     },
+    ...(secretsOf(question).length ? [{
+      label: "裏技・プロの証言を見る",
+      detail: "教本に載りにくいコツと現場の声",
+      action: () => showSecrets(question),
+    }] : []),
     ...(question.sources.length ? [{
       label: "出典を見る",
       detail: "元になった本や論文",
@@ -600,6 +611,42 @@ function showSources(question) {
   showFollowupChoices(question, { exclude: "sources" });
 }
 
+function secretsOf(question) {
+  return Array.isArray(question.app.secrets) ? question.app.secrets : [];
+}
+
+async function showSecrets(question) {
+  if (state.sending) return;
+  const secrets = secretsOf(question);
+  addMessage("相談室", "ここからは、教本に載りにくいコツ、プロの証言、研究の小ネタです。合う合わないがあるので、ピンときたものだけ持ち帰ってください。", { kind: "system" });
+  state.sending = true;
+  try {
+    for (const secret of secrets) {
+      showTyping("相談室");
+      await wait(messageDelay(secret.text));
+      removeTyping();
+      addSecretMessage(secret);
+    }
+  } finally {
+    state.sending = false;
+  }
+  showFollowupChoices(question, { exclude: "secrets" });
+}
+
+function addSecretMessage(secret) {
+  const info = SPEAKERS["相談室"];
+  const row = document.createElement("div");
+  row.className = "message-row";
+  row.innerHTML = `
+    <img class="avatar" src="${info.avatar}" alt="">
+    <div class="message-stack">
+      <div class="bubble secret">${escapeHtml(`【${secret.title}】\n${secret.text}`)}<span class="secret-source">${escapeHtml(secret.source)}</span></div>
+    </div>
+  `;
+  appendChatRow(row);
+  scrollToBottom();
+}
+
 function showFollowupChoices(question, options = {}) {
   const choices = [];
   if (options.exclude !== "discussion") {
@@ -614,6 +661,13 @@ function showFollowupChoices(question, options = {}) {
       label: "今週やることを見る",
       detail: "具体的な練習メニュー",
       action: () => showPrescription(question),
+    });
+  }
+  if (options.exclude !== "secrets" && secretsOf(question).length) {
+    choices.push({
+      label: "裏技・プロの証言を見る",
+      detail: "教本に載りにくいコツと現場の声",
+      action: () => showSecrets(question),
     });
   }
   if (options.exclude !== "sources" && question.sources.length) {

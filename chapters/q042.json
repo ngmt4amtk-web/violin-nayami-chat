@@ -45,7 +45,36 @@
     "2026-05-30_バイオリン悩み図鑑.md P03（音量=弓速・音色=弓圧・明暗=接点の3変数を分離できていないことが根本原因。真下に押すと弦が離れず潰れ、横牽引で振動が立ち上がる）",
     "2026-05-30_バイオリン身体メソッド集.md P03「弓速だけで音量を変える」「接弦点3レーンで倍音を数える」（圧を固定し弓速だけで音量を作る／接弦点だけ変えて音の層を数え、箱が一番鳴るレーンで選ぶ。駒寄り=遅め+重め、指板寄り=軽め+速め）",
     "sweep_results.json「サウンディングポイントがわからない」（駒と指板の間のどこに当てるか感覚的につかめず基準の“真ん中”が曖昧、という症状の生の言い回し）",
-    "Simon Fischer / natesviolin.com「the three variables」（駒と指板の間を5つのサウンドポイントに分け、speed・pressure・distance from bridgeの三変数で音を診断・調整。駒寄りほど遅く重く、指板寄りほど速く軽い。https://natesviolin.com/theres-no-secret-to-violin-sound-just-the-three-variables/ , https://www.simonfischeronline.com/uploads/5/7/7/9/57796211/058tone.pdf）"
+    "Simon Fischer / natesviolin.com「the three variables」（駒と指板の間を5つのサウンドポイントに分け、speed・pressure・distance from bridgeの三変数で音を診断・調整。駒寄りほど遅く重く、指板寄りほど速く軽い。https://natesviolin.com/theres-no-secret-to-violin-sound-just-the-three-variables/ , https://www.simonfischeronline.com/uploads/5/7/7/9/57796211/058tone.pdf）",
+    "Schoonderwaldt 2009 JASA 126(5):2709 / research_reports.md 6.1（弓速・弓圧・接点βの協調を実測。通常演奏β=0.06〜0.13、sul ponticello=0.01〜0.03。駒に寄るほど弓圧の許容幅=楔が狭くなる）",
+    "Violinmasterclass『Bow Speed, Pressure, and Sounding Point』/ Nathan Cole『Practice Mistake 3』/ Violin Lab『Dolcissimo!』/ Simon Fischer『Dublin masterclass』（youtube_violin.md・接点3分離ドリル・長音は接点を駒寄せで保つ・弱音は毛を寝かせて作る・スクエアは腕長で決まる）"
+  ],
+  "secrets": [
+    {
+      "title": "接点3分離ドリル",
+      "text": "弓速・弓圧・接点を別々に動かして耳で覚える3つの練習。(1)メトロノームで1拍は最速・次の1拍は最遅と弓速だけを切り替える(速い弓ほど指板寄りへ寄せないと潰れる)。(2)弓速は一定のまま1拍は圧あり・次は圧ゼロ。(3)全弓を使って接点を指板側から駒側までゆっくり移動させる。どのドリルでも弓は駒と平行に保ち、腕の伸ばし方で接点を決めるのがコツ。3変数をバラバラに動かせるようになると、音が崩れた時どれが原因か一人で即座に切り分けられる。",
+      "source": "Violinmasterclass『Bow Speed, Pressure, and Sounding Point』(youtube_violin.md・弓速/弓圧/接点を分離する3練習)"
+    },
+    {
+      "title": "駒に寄るほど許容幅が狭い",
+      "text": "接点は物理では駒からの距離÷弦長=βという数字で表す。普通の演奏はβ=0.06〜0.13、駒の際で弾くスル・ポンティチェロはβ=0.01〜0.03。ここで効くのは、駒に近いほど『きれいに鳴る弓圧の幅(楔)』が急に狭くなること。つまり駒寄りは芯の太い音が出せる反面、少し圧がズレただけで潰れるかかすれる難所で、弓の制御精度が要る。音がすぐ荒れる日は、まず接点を中間へ戻すと楔が広がって当てやすくなる。",
+      "source": "Schoonderwaldt 2009 JASA 126(5):2709 / research_reports.md 6.1(β=0.06–0.13通常・0.01–0.03 sul pont・駒寄りほど弓圧の楔が狭い)"
+    },
+    {
+      "title": "長い音は圧でなく接点で保つ",
+      "text": "ロングトーンが途中でやせる時、弓圧を足して伸ばそうとすると潰れる。ナタン・コール(LAフィル元アシスタント・コンマス)の助言は逆で、接点を少し駒寄りに寄せて弓の抵抗そのものを増やすこと。駒寄りは弦がよく引っかかるので、同じ弓速・同じ重みのまま音が最後まで保つ。『頑張って押す』のでなく『抵抗の多い場所へ動く』。強い音や持続音は力業でなく接点選びで作る、と覚えておくと右腕が楽になる。",
+      "source": "Nathan Cole『Practice Mistake 3: Working Too Hard』(youtube_violin.md・長音は圧でなく接点を駒寄せで保つ)"
+    },
+    {
+      "title": "弱音は指板近くは逆",
+      "text": "『pや弱い音は指板の近くで』と教わりがちだが、消えずに残るドルチェは指板の近くでは出ない。プロ講師の実演では、むしろ指板から少し離した位置で弓を寝かせ、毛の端だけを使って接触量を極端に減らして作る。弱く弾きたいのに音がかすれて消える人は、指板側へ逃げて接触が薄れているだけのことが多い。弱音でも接点は常用ゾーンに置き、量は『毛の傾け』で減らすと、細くても芯の通った弱音になる。",
+      "source": "Violin Lab『Reflections on Teaching Adult Learners #7 Dolcissimo!』(youtube_violin.md・弱音は指板近くでなく毛を寝かせて作る)"
+    },
+    {
+      "title": "スクエアは腕の長さで違う",
+      "text": "弓を駒と平行に保つ肘の高さ(スクエア)は、腕の長さで決まる相対値。腕が長い人ほど高く、短い人ほど低い位置にスクエアができる。だから他人の見た目のフォームをそのまま真似ると弓が駒と平行に保てず、弾いているうちに接点が指板側へ流れて音が薄くなる。接点が安定しない人は、鏡で『弓が駒と本当に平行か』を自分の腕基準で確かめ直すと、接点のズレの半分は勝手に直る。",
+      "source": "Simon Fischer『Dublin masterclass』(youtube_violin.md・スクエアの高さは腕の長さで決まる相対値)"
+    }
   ],
   "tier": 2
 }

@@ -43,7 +43,30 @@
     "2026-05-30_バイオリン身体メソッド集.md P20（目を閉じて1小節・練習順序を耳→手→目・目を先に動かす4秒ワーク・観の眼で面で見る・譜面台の高さと明るさチェック）",
     "Suboccipital Muscles, Forward Head Posture, and Cervicogenic Dizziness（PMC 2022・前方頭位で後頭下筋群が短縮・緊張し頭痛や首肩痛の一因）https://pmc.ncbi.nlm.nih.gov/articles/PMC9786116/",
     "Evaluation of a Cervical Stabilization Exercise Program in University Violinists with Nonspecific Neck Pain（PMC・首痛はプロ奏者の筋骨格系愁訴で2番目に多い）https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7432242/",
-    "OrthoInfo (AAOS) Cervical Radiculopathy（首から腕・手へ広がるしびれ・脱力・進行する症状は頸椎神経根症の可能性・受診の目安）https://orthoinfo.aaos.org/en/diseases--conditions/cervical-radiculopathy-pinched-nerve/"
+    "OrthoInfo (AAOS) Cervical Radiculopathy（首から腕・手へ広がるしびれ・脱力・進行する症状は頸椎神経根症の可能性・受診の目安）https://orthoinfo.aaos.org/en/diseases--conditions/cervical-radiculopathy-pinched-nerve/",
+    "Kuo YL, Lee TH, Tsai YJ (2020)「Evaluation of a Cervical Stabilization Exercise Program ... University Violinists with Nonspecific Neck Pain」Int J Environ Res Public Health（6週間・週3・1日20分の自宅プログラムで首痛4pt減・頭蓋脊椎角+1.8°・深層屈筋持久力+5.4秒/伸筋+78.3秒）"
+  ],
+  "secrets": [
+    {
+      "title": "週3・20分で前方頭位が動いた",
+      "text": "首痛のある大学バイオリン奏者20名に、6週間・週3日・1日20分の自宅プログラム（首を上へ伸ばす軸方向伸長運動、あごを引く頭頸部屈曲運動、首の伸展運動、首と肩甲骨まわりの強化）をやらせたら、首の痛みが4ポイント減り、前方頭位の指標（頭蓋脊椎角）が+1.8°改善、深い首の屈筋の持久力が+5.4秒、伸筋が+78.3秒伸びた。首を意識で引き続けるより、深層の首の筋を「持久力」として鍛えるほうが、前に落ちにくい首が手に入る、という数字。",
+      "source": "Kuo YL, Lee TH, Tsai YJ (2020)「Cervical Stabilization Exercise Program ... University Violinists with Nonspecific Neck Pain」Int J Environ Res Public Health（本ファイルsources末尾に完全引用）"
+    },
+    {
+      "title": "首が痛む人は表の筋で挟む",
+      "text": "首痛のあるバイオリン/ビオラ奏者は、あごを引く動作テスト（頭頸部屈曲テスト）の最中に、胸鎖乳突筋（首の前面を斜めに走る太い筋）の筋電が健常者より大きい——本来は奥の深層筋で支えるべきところを、表層の太い筋で頭を挟み込むクセがある、と筋電図で確認されている。見分け方は、あごを軽く引くとき喉の脇の筋が硬く盛り上がるかを指で触ること。盛り上がるなら、頭のてっぺんを天井へ伸ばしながら「うなずかずにあごだけ後ろへ引く」動きで、奥の筋に仕事を戻す。",
+      "source": "Steinmetz A, Claus A, Hodges PW, Jull GA (2016)「Neck muscle function in violinists/violists with and without neck pain」Clinical Rheumatology 35(4):1045-1051（PMID 26175099・PubMedで内容確認：頸部痛群はCCFT中のSCM筋電が有意に大）"
+    },
+    {
+      "title": "頭が回る点は耳の奥にある",
+      "text": "「頭がうなずく関節はどこ？」と聞くと多くの人は首の後ろを指すが、実際の環椎後頭関節は左右の耳のすぐ後ろのくぼみを結んだ線の、さらに奥・頭蓋骨のかなり上にある。この一点の身体地図を正しく置き直すだけで、首・腕・指の自由度が瞬時に変わることがよくある（維持には反復が要る）。加えて多くの人は自分の首（頸椎）の太さを、実際の5cm以上よりずっと細く見積もっている。「耳の奥の高い点でうなずく／首は思うより太い」と一度イメージし直してから構えると、前へ突き出す動きが減る。",
+      "source": "Music Minus Pain「Is Body Mapping A Quick Fix?」（環椎後頭関節は耳の奥・頭蓋の上方にある）／ボディ・マッピング一般（頸椎の太さの過小評価・実際は最低約5cm）"
+    },
+    {
+      "title": "見すぎた日の後頭下ほぐし",
+      "text": "指板や譜面を見つめすぎた日のリセット。仰向けになり、両手を軽く握ってこぶしを作り、後頭部と首の境目（後頭下のくぼみ）に左右一つずつ敷いて、頭の重みをこぶしに預ける。目を閉じ、「眼球が後頭部のほうへ沈んでいく」とイメージすると、こって前へ引っぱっていた奥の首の筋と、目の奥の緊張が一緒にゆるむ。2〜3分でよい。首を前に出すクセの正体は後頭下筋群の縮こまりなので、その日のうちに縮みを戻しておくと、翌日の突き出しが軽くなる。",
+      "source": "アーティストパフォーマンス研究所(kou)「首のコンディショニング」（仰向けで後頭下のくぼみにこぶしを敷き頭の重みを預ける後頭下筋群リリース）"
+    }
   ],
   "tier": 2
 }

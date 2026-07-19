@@ -42,7 +42,31 @@
     "2026-05-30_バイオリン悩み図鑑.md P06（弓配分の根本原因=弓の全長を拍にマッピングする空間-時間の運動計画が未獲得・音のばらつきの正体の多くは弓速の不均一・長フレーズで弓が足りなくなる）",
     "2026-05-30_バイオリン身体メソッド集.md P06（弓に1/4・1/2・3/4のテープを貼り4拍=1弓で通過点を作るドリル・長弓で弓速一定を作る=中央を時間の中央で通過）",
     "cursor-book-2026 bowing/07_legato.md（レガートの実体=弓速・弓圧・接触点を音符をまたいで一定に保つ＝ソンファイレの上に音符を乗せたもの・8音スラーなら弓を8等分する弓の会計・移弦の肘の先取り）",
-    "sweep_results.json 右手EN#スラーにすると音が汚くなる（症状の生の言い回し=短く切ったデタシェは綺麗なのにスラーでつなげた途端にガサガサ・ムラのある音になる。出典 violinist.com discussion「Uneven and crunchy sound while playing」）"
+    "sweep_results.json 右手EN#スラーにすると音が汚くなる（症状の生の言い回し=短く切ったデタシェは綺麗なのにスラーでつなげた途端にガサガサ・ムラのある音になる。出典 violinist.com discussion「Uneven and crunchy sound while playing」）",
+    "The Cambridge Companion to the Violin（Robin Stowell編／Cambridge UP 1992）Bernard Richardson執筆の物理章（弓圧の上限・下限の窓、過剰時の耳障りな音とわずかなピッチ低下）／books_en.md L321",
+    "Schoonderwaldt, Guettler & Askenfelt 2007「Schelleng in retrospect – A systematic study of bow force limits」ISMA 2007（最小弓圧は弓速に依存しないことを実測）／qa300-book-2026/research/web_papers_sound.md"
+  ],
+  "secrets": [
+    {
+      "title": "潰れた音はピッチも下がる",
+      "text": "物理の検証ポイント。ケンブリッジ・コンパニオン（物理章）によれば、澄んだ持続音に必要な弓圧は、駒からの距離と弓速で決まる上限・下限の窓の中に収まっている必要がある。低すぎると弦が1周期に2〜3回すべって口笛のような“幽霊”音、高すぎると耳障りでざらつき、しかも実際にピッチがわずかに下がる。使い方: スラーの音がガサついたとき、同時にほんの少し音程が下ずっていないか聴く。下ずっていれば犯人は弓圧過剰（弓速が落ちて圧が余った）で、接弦点いじりでは直らない。速さ・配分の側を疑う決め手になる。",
+      "source": "The Cambridge Companion to the Violin（Stowell編・Richardson物理章）／books_en.md L321"
+    },
+    {
+      "title": "速く弾いても軽い圧にならない",
+      "text": "「弓を速くすればもっと軽い圧で鳴る」は条件付きで誤り。ボウイングマシンで弓圧限界を系統測定したショーンダーヴァルト、ゲトラー＆アスケンフェルト（2007）は、最小弓圧は弓速に“依存しない”ことを見つけ、シェレンの古典予測に反証を与えた。意味するところ: スラーの途中で弓速がしぼんで潰れ始めた音は、そこから弓を速めても救えない。合っていた重みとの釣り合いが崩れているからだ。だから対策は「潰れてから速める」ではなく、一弓の最初から弓速を膨らませない・落とさないこと一本に絞られる。",
+      "source": "Schoonderwaldt, Guettler & Askenfelt 2007「Schelleng in retrospect」ISMA 2007 ／qa300-book-2026/research/web_papers_sound.md"
+    },
+    {
+      "title": "スラーは左手が質を決める",
+      "text": "見落としがちな角度。Violinmasterclass「Legato」は、スラーの中ではリズムとアーティキュレーションの大半を左手が担う、と教える。だから移弦は実際に渡るずっと前から弓を新しい弦へ寄せ始める。さらに指を弦へ落とす動作には二役ある——新しい音程を作ることと、前の弦の振動を止めること。だから指は速く叩き下ろすが、余分な圧は残さない。検証: あなたのスラーのガサつきは、右手だけでなく左指がぼやけて落ちていないか。指がもたつくとスラーもぼやける。渡りは早めに始める、を一緒に足す。",
+      "source": "Violinmasterclass「Legato: Definition」「Finger Dropping & Lifting」／qa300-book-2026/research/youtube_violin.md #50, #52"
+    },
+    {
+      "title": "フレーズ終わりは減速で畳む",
+      "text": "「フレーズの終わりで弓が足りず音が潰れる」への処方。Violin Labが言う“テーパー”は、フレーズや音符グループの終わりで弓の速度と圧を意図して弱め、句読点のように自然にフェードさせる技法だ。テーパー直前の音をわずかに強調してから力を抜くと優雅さが出る。バロック〜古典派の2音スラーは「最初を強く・2音目を軽く」がこの応用。つまり最後の一滴まで全速で引き切ろうとせず、フェードを設計に織り込む。弓が足りないのではなく、終いの畳み方を決めていないだけのことが多い。",
+      "source": "Violin Lab「Playing Expressively: The Taper」／qa300-book-2026/research/youtube_violin.md #39"
+    }
   ],
   "tier": 2
 }

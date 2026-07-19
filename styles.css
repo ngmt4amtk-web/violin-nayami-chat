@@ -370,6 +370,18 @@ h1 {
   font-size: 12px;
 }
 
+.bubble.secret {
+  background: #f3ecfb;
+  border-left: 3px solid #7c4dbd;
+}
+
+.bubble.secret .secret-source {
+  display: block;
+  margin-top: 6px;
+  color: #5d5570;
+  font-size: 11px;
+}
+
 .bubble.image-bubble {
   padding: 8px;
   background: #fff;

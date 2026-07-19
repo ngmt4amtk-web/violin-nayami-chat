@@ -102,6 +102,15 @@ for (const name of files) {
   for (const turn of raw.discussion || []) {
     if (!VALID_SPEAKERS.has(turn.speaker)) errors.push(`${name}: 不正な話者 (${turn.speaker})`);
   }
+  if (raw.secrets !== undefined) {
+    if (!Array.isArray(raw.secrets) || raw.secrets.length < 2 || raw.secrets.length > 6) {
+      errors.push(`${name}: secretsは2〜6件の配列であること`);
+    } else {
+      for (const [i, secret] of raw.secrets.entries()) {
+        if (!secret.title || !secret.text || !secret.source) errors.push(`${name}: secrets[${i}]にtitle/text/sourceが必要`);
+      }
+    }
+  }
   questions.push({
     id: raw.id,
     chapter: raw.chapter,
@@ -119,6 +128,11 @@ for (const name of files) {
         blocks: splitBlocks(turn.text),
       })),
       prescription: raw.prescription || [],
+      secrets: (raw.secrets || []).map((secret) => ({
+        title: String(secret.title).trim(),
+        text: String(secret.text).trim(),
+        source: String(secret.source).trim(),
+      })),
     },
   });
 }
@@ -142,4 +156,5 @@ const payload = {
 };
 
 writeFileSync(outputPath, `window.VIOLIN_QA_DATA = ${JSON.stringify(payload, null, 2)};\n`, "utf8");
-console.log(`OK: ${questions.length}問 -> data/questions.js`);
+const withSecrets = questions.filter((q) => q.app.secrets.length).length;
+console.log(`OK: ${questions.length}問 (裏技あり${withSecrets}問) -> data/questions.js`);
