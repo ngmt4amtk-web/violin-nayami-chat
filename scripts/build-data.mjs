@@ -99,8 +99,11 @@ for (const name of files) {
   if (!raw.id || !raw.title || !raw.question) errors.push(`${name}: id/title/questionが欠落`);
   if (!Array.isArray(raw.discussion) || raw.discussion.length < 4) errors.push(`${name}: discussionが4発言未満`);
   if (!Array.isArray(raw.prescription) || raw.prescription.length < 3) errors.push(`${name}: prescriptionが3項目未満`);
-  for (const turn of raw.discussion || []) {
+  for (const [i, turn] of (raw.discussion || []).entries()) {
     if (!VALID_SPEAKERS.has(turn.speaker)) errors.push(`${name}: 不正な話者 (${turn.speaker})`);
+    if (!turn.plain || String(turn.plain).trim().length < 40) {
+      errors.push(`${name}: discussion[${i}]のplain（噛み砕き文）が欠落または短すぎ`);
+    }
   }
   if (raw.secrets !== undefined) {
     if (!Array.isArray(raw.secrets) || raw.secrets.length < 2 || raw.secrets.length > 6) {
@@ -125,7 +128,9 @@ for (const name of files) {
       profile: null,
       discussion: (raw.discussion || []).map((turn) => ({
         speaker: turn.speaker,
-        blocks: splitBlocks(turn.text),
+        // plainは発言(turn)単位。複数ブロックに割れた発言では全ブロックに同じ噛み砕きを付ける
+        // （どのブロックで「わからない」を押しても発言全体を例え話で説明し直す）
+        blocks: splitBlocks(turn.text).map((block) => ({ ...block, p: String(turn.plain || "").trim() || undefined })),
       })),
       prescription: raw.prescription || [],
       secrets: (raw.secrets || []).map((secret) => ({
